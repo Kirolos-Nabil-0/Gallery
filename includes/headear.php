@@ -1,12 +1,17 @@
+<?php
+$base_url = "http://localhost/Gallery-app/";
+session_start();
+echo $_SESSION['email'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog-Z Bootstrap 5.0 HTML Template</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>css/templatemo-style.css">
 <!--
     
 TemplateMo 556 Catalog-Z
@@ -26,29 +31,45 @@ https://templatemo.com/tm-556-catalog-z
     </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/gallery">
                 <i class="fas fa-film mr-2"></i>
-                Catalog-Z
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                AVA-Antony-Data            </a>
+ 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Photos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-1 active" aria-current="page" href="create.html">create</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">login</a>
-                </li>
-               
-            </ul>
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <?php if (isset($_SESSION['user_idd'])) { ?>
+                        <!-- User is logged in -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1 active" href="<?php echo $base_url; ?>">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'create.php'; ?>">Create</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'categories'; ?>">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1" href="sub-cat">Subcategories</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Aouth/logout.php'; ?>">logout</a>
+                        </li>
+                    <?php } else { ?>
+                        <!-- User is not logged in -->
+                        <li class="nav-item">
+                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Aouth/register.php'; ?>">register</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Aouth/login.php'; ?>">login</a>
+                        </li>
+                    <?php } ?>
+                </ul>
+            </div>                </ul>
             </div>
         </div>
     </nav>
