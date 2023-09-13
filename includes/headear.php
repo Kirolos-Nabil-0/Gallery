@@ -57,15 +57,15 @@ https://templatemo.com/tm-556-catalog-z
                             <a class="nav-link nav-link-1" href="sub-cat">Subcategories</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Aouth/logout.php'; ?>">logout</a>
+                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Auth/logout.php'; ?>">logout</a>
                         </li>
                     <?php } else { ?>
                         <!-- User is not logged in -->
                         <li class="nav-item">
-                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Aouth/register.php'; ?>">register</a>
+                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Auth/register.php'; ?>">register</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Aouth/login.php'; ?>">login</a>
+                        <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Auth/login.php'; ?>">login</a>
                         </li>
                     <?php } ?>
                 </ul>

@@ -5,7 +5,8 @@
         "psr-4": {
             "Kirolos\\GalleryApp\\": "classes/",
             "Kirolos\\GalleryApp\\Auth\\": "classes/Auth",
-            "Kirolos\\GalleryApp\\Db\\": "classes/DB"
+            "Kirolos\\GalleryApp\\Db\\": "classes/DB",
+            "Kirolos\\GalleryApp\\Categories\\": "classes/Categories"
         }
     },
     "authors": [
