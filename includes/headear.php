@@ -30,9 +30,9 @@ https://templatemo.com/tm-556-catalog-z
     </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/gallery">
+            <a class="navbar-brand" href="<?php echo $base_url ?>">
                 <i class="fas fa-film mr-2"></i>
-                AVA-Antony-Data            </a>
+               Gallery           </a>
  
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
