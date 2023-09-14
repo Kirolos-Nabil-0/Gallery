@@ -1,7 +1,6 @@
 <?php
 $base_url = "http://localhost/Gallery-app/";
 session_start();
-echo $_SESSION['email'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

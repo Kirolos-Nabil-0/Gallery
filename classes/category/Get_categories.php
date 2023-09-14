@@ -26,7 +26,14 @@ public function Get_categoryByName($name){
 public function Get_All_Categories(){
     $stmt = "SELECT * FROM categories";
 
-    return $this->db->query($stmt)->fetchArray();
+    $result = $this->db->query($stmt);
+    $categories = array();
+
+    while ($row = $result->fetchArray()) {
+        $categories[] = $row;
+    }
+
+    return $categories;
 }
 
 public function SearchCategories($keyword) {
@@ -39,4 +46,3 @@ public function SearchCategories($keyword) {
 
 
 }
-

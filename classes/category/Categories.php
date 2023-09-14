@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 class Categories 
 {
+    use \General;
+
     private $Create_category;
     private $Delete_category;
     private $Get_category;
