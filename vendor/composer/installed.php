@@ -3,7 +3,7 @@
         'name' => 'kirolos/gallery-app',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '549ad01a0a93379b5b95f0471e1be8a096bb92a3',
+        'reference' => '65dc06a60c5334ad08971317c30bca884518f9c0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'kirolos/gallery-app' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '549ad01a0a93379b5b95f0471e1be8a096bb92a3',
+            'reference' => '65dc06a60c5334ad08971317c30bca884518f9c0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

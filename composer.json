@@ -6,7 +6,8 @@
             "Kirolos\\GalleryApp\\": "classes/",
             "Kirolos\\GalleryApp\\Auth\\": "classes/Auth",
             "Kirolos\\GalleryApp\\Db\\": "classes/DB",
-            "Kirolos\\GalleryApp\\Category\\":"classes/category"
+            "Kirolos\\GalleryApp\\Category\\":"classes/category",
+            "Kirolos\\GalleryApp\\sub_categories\\":"classes/sub_categories"
         }
     },
     "authors": [

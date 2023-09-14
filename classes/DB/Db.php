@@ -41,6 +41,16 @@ class db
         return $result;
     }
 
+    public function fetchAll()
+    {
+        $result = $this->query->fetch_all();
+        if (!$result) {
+            $this->query->close();
+            $this->query_closed = true;
+        }
+        return $result;
+    }
+
     public function numRows()
     {
         return $this->query->num_rows;
