@@ -1,10 +1,9 @@
 <?php
-namespace Kirolos\GalleryApp\Categories;
+namespace Kirolos\GalleryApp\Category;
 
 use Kirolos\GalleryApp\Db\db; // Import the db class
-require_once __DIR__ . '/../../vendor/autoload.php';
 
-class GetCategories 
+class Get_categories 
 {
     private $db;
 
@@ -24,11 +23,20 @@ public function Get_categoryByName($name){
 
     return $this->db->query($stmt)->fetchArray();
 }
+public function Get_All_Categories(){
+    $stmt = "SELECT * FROM categories";
 
+    return $this->db->query($stmt)->fetchArray();
+}
+
+public function SearchCategories($keyword) {
+    $keyword = $this->db->escapeString($keyword);
+    $stmt = "SELECT * FROM categories WHERE name LIKE '%$keyword%'";
+
+    return $this->db->query($stmt)->fetchArray();
 }
 
 
-$Getcategories = new GetCategories();
 
-print_r( $Getcategories->Get_categoryByName("قداسات"));
-print_r( $Getcategories->Get_categoryById(1));
+}
+

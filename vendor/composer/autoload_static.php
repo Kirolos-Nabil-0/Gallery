@@ -10,7 +10,7 @@ class ComposerStaticInitd0430cf2113440ac643632cd5c8149b2
         'K' => 
         array (
             'Kirolos\\GalleryApp\\Db\\' => 22,
-            'Kirolos\\GalleryApp\\Categories\\' => 30,
+            'Kirolos\\GalleryApp\\Category\\' => 28,
             'Kirolos\\GalleryApp\\Auth\\' => 24,
             'Kirolos\\GalleryApp\\' => 19,
         ),
@@ -21,9 +21,9 @@ class ComposerStaticInitd0430cf2113440ac643632cd5c8149b2
         array (
             0 => __DIR__ . '/../..' . '/classes/DB',
         ),
-        'Kirolos\\GalleryApp\\Categories\\' => 
+        'Kirolos\\GalleryApp\\Category\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/classes/Categories',
+            0 => __DIR__ . '/../..' . '/classes/category',
         ),
         'Kirolos\\GalleryApp\\Auth\\' => 
         array (

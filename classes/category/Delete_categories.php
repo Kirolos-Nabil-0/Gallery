@@ -1,5 +1,6 @@
 <?php
-namespace Kirolos\GalleryApp\Categories;
+namespace Kirolos\GalleryApp\Category;
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Kirolos\GalleryApp\Db\db; // Import the db class
 
@@ -18,3 +19,5 @@ class Delete_Categories
         $stmt = $this->db->query("DELETE FROM categories WHERE name = '$name' ");
     }
 }
+
+

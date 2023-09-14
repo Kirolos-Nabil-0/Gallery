@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Kirolos\\GalleryApp\\Db\\' => array($baseDir . '/classes/DB'),
-    'Kirolos\\GalleryApp\\Categories\\' => array($baseDir . '/classes/Categories'),
+    'Kirolos\\GalleryApp\\Category\\' => array($baseDir . '/classes/category'),
     'Kirolos\\GalleryApp\\Auth\\' => array($baseDir . '/classes/Auth'),
     'Kirolos\\GalleryApp\\' => array($baseDir . '/classes'),
 );
