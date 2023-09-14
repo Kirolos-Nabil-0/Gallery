@@ -9,7 +9,7 @@ class ComposerStaticInitd0430cf2113440ac643632cd5c8149b2
     public static $prefixLengthsPsr4 = array (
         'K' => 
         array (
-            'Kirolos\\GalleryApp\\sub_categories\\' => 34,
+            'Kirolos\\GalleryApp\\Subcat\\' => 26,
             'Kirolos\\GalleryApp\\Db\\' => 22,
             'Kirolos\\GalleryApp\\Category\\' => 28,
             'Kirolos\\GalleryApp\\Auth\\' => 24,
@@ -18,7 +18,7 @@ class ComposerStaticInitd0430cf2113440ac643632cd5c8149b2
     );
 
     public static $prefixDirsPsr4 = array (
-        'Kirolos\\GalleryApp\\sub_categories\\' => 
+        'Kirolos\\GalleryApp\\Subcat\\' => 
         array (
             0 => __DIR__ . '/../..' . '/classes/sub_categories',
         ),

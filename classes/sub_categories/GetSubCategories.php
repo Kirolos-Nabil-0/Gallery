@@ -1,7 +1,6 @@
 <?php
 namespace Kirolos\GalleryApp\Subcat;
 
-require_once __DIR__ . '/../../vendor/autoload.php';
 
 class GetSubCategories 
 {
@@ -21,7 +20,7 @@ class GetSubCategories
         return $stmt->fetchAll();
     }
 
-    public function getSubcategoriesByCategory($categoryID) {
+    public function getSubcategoriesByCategoryId($categoryID) {
         $subcategoriesQuery = $this->db->query("SELECT * FROM sub_cat WHERE category_id = $categoryID");
 
         return $subcategoriesQuery->fetchAll();

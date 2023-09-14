@@ -6,7 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Kirolos\\GalleryApp\\sub_categories\\' => array($baseDir . '/classes/sub_categories'),
+    'Kirolos\\GalleryApp\\Subcat\\' => array($baseDir . '/classes/sub_categories'),
     'Kirolos\\GalleryApp\\Db\\' => array($baseDir . '/classes/DB'),
     'Kirolos\\GalleryApp\\Category\\' => array($baseDir . '/classes/category'),
     'Kirolos\\GalleryApp\\Auth\\' => array($baseDir . '/classes/Auth'),

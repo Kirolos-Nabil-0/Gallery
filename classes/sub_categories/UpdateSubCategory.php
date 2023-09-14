@@ -21,7 +21,7 @@ class UpdateSubCategory
         if ($this->db->query($stmt)) {
             echo "Sub Category updated successfully.";
         } else {
-            echo "Failed to update Sub category.";
+            echo "Faailed to update Sub category.";
         }
     }
 }
