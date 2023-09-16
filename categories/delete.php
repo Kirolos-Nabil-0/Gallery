@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Handle category deletion
             $categories->Delete_Category_By_id($categoryId);
-            $categories->redirect("index");
+            $categories->redirect($base_url."categories/");
             exit();
         }
 ?>

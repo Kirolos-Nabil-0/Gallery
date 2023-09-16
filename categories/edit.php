@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
             } else {
                 // Update the category in the database
                 $categories->Update_category($categoryId, $newName);
-                $categories->redirect("index");
+                $categories->redirect($base_url."categories/");
                 exit();
             }
         }

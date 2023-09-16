@@ -53,7 +53,7 @@ https://templatemo.com/tm-556-catalog-z
                         <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'categories'; ?>">Categories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-1" href="sub-cat">Subcategories</a>
+                            <a class="nav-link nav-link-1" href="<?php echo $base_url.'subcategories'; ?>">Subcategories</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'Auth/logout.php'; ?>">logout</a>

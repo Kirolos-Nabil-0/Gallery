@@ -8,13 +8,24 @@ use Kirolos\GalleryApp\Db\db;
     private $db ;
 
     function __construct(){
-        $db= new db();
+        $this->db= new db();
+    }                                                                                                                            
+    
+    public function deleteSubCategoryById($id) {
+        $stmt = $this->db->query("DELETE FROM sub_cat WHERE id = ".$id);
+                if ($stmt) {
+                    return true; 
+                } else {
+                    return false; 
+                }
+    }
+    public function deleteSubCategoryByName($name) {
+        $stmt = $this->db->query("DELETE FROM sub_cat WHERE name = '$name'");
+        if ($stmt) {
+            return true; // Deletion successful
+        } else {
+            return false; // Deletion failed
+        }
     }
     
-    public function deleteCategoryById($id) {
-        $stmt = $this->db->query("DELETE FROM categories WHERE id = ".$id);
-    }
-    public function deleteCategoryByName($name) {
-        $stmt = $this->db->query("DELETE FROM categories WHERE name = '$name' ");
-    }
 }

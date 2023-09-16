@@ -6,7 +6,7 @@ class CreateSubCategory
     private $db ;
 
     function __construct(){
-        $db= new db();
+        $this->db= new db();
     }
     
     public function createSubcategory($name, $categoryId) {

@@ -13,10 +13,10 @@ class Delete_Categories
         $this->db = new db; // Create an instance of the db class
     }
     public function deleteCategoryById($id) {
-        $stmt = $this->db->query("DELETE FROM sub_cat WHERE id = ".$id);
+        $stmt = $this->db->query("DELETE FROM categories WHERE id = ".$id);
     }
     public function deleteCategoryByName($name,$category_id) {
-        $stmt = $this->db->query("DELETE FROM sub_cat WHERE name = '$name' AND category_id = $category_id");
+        $stmt = $this->db->query("DELETE FROM categories WHERE name = '$name' AND category_id = $category_id");
     }
 }
 
