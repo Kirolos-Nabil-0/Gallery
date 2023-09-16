@@ -15,8 +15,8 @@ class Delete_Categories
     public function deleteCategoryById($id) {
         $stmt = $this->db->query("DELETE FROM categories WHERE id = ".$id);
     }
-    public function deleteCategoryByName($name,$category_id) {
-        $stmt = $this->db->query("DELETE FROM categories WHERE name = '$name' AND category_id = $category_id");
+    public function deleteCategoryByName($name) {
+        $stmt = $this->db->query("DELETE FROM categories WHERE name = '$name'");
     }
 }
 

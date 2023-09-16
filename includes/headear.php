@@ -47,7 +47,7 @@ https://templatemo.com/tm-556-catalog-z
                             <a class="nav-link nav-link-1 active" href="<?php echo $base_url; ?>">Photos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'create.php'; ?>">Create</a>
+                            <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'media/addmedia.php'; ?>">Add media </a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link nav-link-1 active"  href="<?php echo $base_url.'categories'; ?>">Categories</a>
@@ -74,10 +74,10 @@ https://templatemo.com/tm-556-catalog-z
     </nav>
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
-       <!--  <form class="d-flex tm-search-form">
+        <form class="d-flex tm-search-form">
             <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 <i class="fas fa-search"></i>
             </button>
-        </form> -->
+        </form>
     </div>
